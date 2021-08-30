@@ -28,7 +28,7 @@ class Matrix:
             print('The operation cannot be performed.')
 
     def main_trans(self):
-        return [[self.matrix[j][i] for j in range(self.columns)] for i in range(self.rows)]
+        return [[self.matrix[i][j] for i in range(self.rows)] for j in range(self.columns)]
 
     def vertical_trans(self):
         return [self.matrix[i][::-1] for i in range(self.rows)]
